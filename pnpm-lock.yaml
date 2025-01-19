@@ -18,6 +18,16 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
 
+  apps/endpoints:
+    dependencies:
+      '@repo/lib':
+        specifier: workspace:*
+        version: link:../../packages/lib
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+
   packages/lib:
     devDependencies:
       '@repo/typescript-config':
